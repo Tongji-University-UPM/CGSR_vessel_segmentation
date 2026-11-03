@@ -1,0 +1,39 @@
+{
+
+    "info":"",
+
+    "seed": 0,
+    "device": "cuda:0",
+
+    "skip_train": false,
+
+    "model_type": "ResNet",
+
+    "lr": 1e-4,
+    "epochs": 15,
+    "batch_size": 4,
+    "patchify": null,
+    "resize": 384,
+    "augmentations": ["rand_resize", "img_distort"],
+
+    "validation_pctg": 0.1,
+    "dataset_pctg": 1,
+    "plabel_score": 0.80,
+    "pretrained_model": true,
+    "pretrained_model_name": "MULTI_evc_model_3c_80s_distres_ref",
+    "contrastive_train": true,
+
+    "save_chkpt": false,
+    "fill_pl_blanks": false,
+
+    "ds_list": ["XCAD", "STARE"],
+
+    "model_path": "/path/to/save/models/",
+    "model_name": "MULTI_evc_model_3c_80s_distres_ref_2nd",
+
+    "data_path": "/path/where/datasets/are/located/",
+    "image_folder": "training/images/",
+    "plabel_folder": "training/ref_plabel_maps_single_DSA_2nd/",
+    
+    "test_results_path": "/path/to/store/results/"
+}

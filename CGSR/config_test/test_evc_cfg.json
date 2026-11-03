@@ -1,0 +1,34 @@
+{
+
+    "info":"",
+
+    "seed": 0,
+    "device": "cuda",
+
+    "skip_train": false,
+
+    "model_type": "ResNet",
+
+    "lr": 1e-4,
+    "epochs": 15,
+    "batch_size": 4,
+    "patchify": null,
+    "resize": 384,
+
+    "validation_pctg": 0.1,
+    "dataset_pctg": 1,
+    "plabel_score": 0.8,
+    "pretrained_model": true,
+    "pretrained_model_name": "MULTI_evc_model_3c_80s_distres_ref_2nd",
+    "contrastive_train": true,
+
+    "ds_list": ["DSA", "30XCA", "134XCA", "XCAD", "DRIVE", "STARE"],
+
+    "model_path": "/path/to/save/models/",
+
+    "data_path": "/path/where/datasets/are/located/",
+    "image_folder": "test/images/",
+    
+    "test_gt_folder": "test/masks/",
+    "test_results_path": "/path/to/store/results/"
+}
