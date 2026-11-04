@@ -1,5 +1,6 @@
 # Confidence-Guided Self-Refinement with Uncertainty-Aware Supervision for Annotation-Free Angiographic Vessel Segmentation
 ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
+![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)
 
 
 <p align="center">
