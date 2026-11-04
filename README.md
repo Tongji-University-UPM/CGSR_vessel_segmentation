@@ -9,7 +9,7 @@
 This repository provides the implementation of a label-free framework for vascular segmentation that explicitly models supervision reliability at both image and pixel levels. The proposed approach combines complementary vessel detectors applied to different intensity transformations with connectivity analysis to identify confident vessel, confident non-vessel, and potential-vessel regions. An image-level confidence score guides the selection of reliable training samples, while uncertain pixels are excluded from hard supervision and progressively reassessed through an iterative confidence-guided refinement process. The segmentation network is trained using a combination of masked Dice, supervised contrastive, and equivariance objectives, enabling it to learn from selectively generated and evolving image-derived supervision without requiring manual annotations during training.
 
 ## Dataset organization
-The datasets that are going to be used for training or test must be placed in a particular folder structure. 
+Datasets used for training or test must be placed in this particular folder structure:
 ```
 /path/to/datasets/
  ├── 134XCA/
@@ -33,7 +33,7 @@ All images must be in .png format. The script `./aux/main.py` can be helpful to 
 ## How to use it
 
 ### 1. Pseudo-label extraction algorithms parametrization
-It is required to estimate first the parameters for the automatic pseudo-label extraction, which can be used in the following way for retinal datasets:
+It is first required to estimate the parameters for the automatic pseudo-label extraction, which can be used in the following way for retinal datasets:
 
 ```bash
 cd parameter_setting
